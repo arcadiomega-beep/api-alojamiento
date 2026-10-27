@@ -1,16 +1,17 @@
 {
   "info": {
-    "_postman_id": "04747f6f-c3c8-4766-8876-ee7a95487fcf",
+    "_postman_id": "4239f642-5d34-4d4b-a6df-db4747aaa617",
     "name": "Alojamientos API - Sprint 02",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "58229158"
+    "_exporter_id": "58229158",
+    "_collection_link": "https://go.postman.co/collection/58229158-4239f642-5d34-4d4b-a6df-db4747aaa617?source=collection_link"
   },
   "item": [
     {
       "name": "00 - Health",
       "item": [
         {
-          "name": "GET /health",
+          "name": "GET/health",
           "request": {
             "method": "GET",
             "header": [],
@@ -32,7 +33,7 @@
       "name": "01 - Registro",
       "item": [
         {
-          "name": "POST /api/v1/usuarios/registro",
+          "name": "POST/api/v1/usuarios/registro",
           "request": {
             "method": "POST",
             "header": [],
@@ -61,7 +62,7 @@
           "response": []
         },
         {
-          "name": "POST /api/v1/usuarios/registro Copy",
+          "name": "POST/api/v1/usuarios/registro Copy",
           "request": {
             "method": "POST",
             "header": [],
@@ -90,7 +91,7 @@
           "response": []
         },
         {
-          "name": "POST /api/v1/usuarios/login",
+          "name": "POST/api/v1/usuarios/login",
           "request": {
             "method": "POST",
             "header": [],
@@ -119,7 +120,7 @@
           "response": []
         },
         {
-          "name": "POST /api/v1/usuarios/login Copy",
+          "name": "POST/api/v1/usuarios/login Copy",
           "request": {
             "method": "POST",
             "header": [],
@@ -148,7 +149,7 @@
           "response": []
         },
         {
-          "name": "GET /api/v1/usuarios/perfil",
+          "name": "GET/api/v1/usuarios/perfil",
           "request": {
             "method": "GET",
             "header": [],
@@ -168,14 +169,13 @@
           "response": []
         },
         {
-          "name": "GET /api/v1/usuarios/perfil Copy",
+          "name": "GET/api/v1/usuarios/perfil Copy",
           "request": {
             "method": "GET",
             "header": [
               {
                 "key": "Authorization",
-                "value": "Bearer {{token_usuario}}",
-                "type": "text"
+                "value": "Bearer {{token_usuario}}"
               }
             ],
             "url": {
@@ -194,20 +194,17 @@
           "response": []
         },
         {
-          "name": "GET /api/v1/admin/usuarios",
+          "name": "GET/api/v1/admin/usuarios",
           "request": {
             "method": "GET",
             "header": [
               {
                 "key": "Authorization",
-                "value": "Bearer {{token_usuario}}",
-                "type": "text",
-                "disabled": true
+                "value": "Bearer {{token_usuario}}"
               },
               {
                 "key": "Authorization",
-                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiaWF0IjoxNzg5OTIxNjA2LCJleHAiOjE3ODk5MjI1MDZ9.HWdg5vSMr05yF0S7fT25JqA1_tkk22qm9SRjkcgCcnk",
-                "type": "text"
+                "value": "{{json_web_token_15p8}}"
               }
             ],
             "url": {
@@ -228,7 +225,7 @@
       ]
     },
     {
-      "name": "02 -Login",
+      "name": "02 - Login",
       "item": []
     },
     {
@@ -238,6 +235,16 @@
     {
       "name": "04 - Autorización",
       "item": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "bearer_token_0m7y",
+      "secret": true
+    },
+    {
+      "key": "json_web_token_15p8",
+      "secret": true
     }
   ]
 }
